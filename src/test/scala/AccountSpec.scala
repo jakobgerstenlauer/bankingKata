@@ -1,5 +1,9 @@
-import org.scalatest._
-
+import bank.Amount
+import bank.Account
+import bank.Date
+import bank.Transaction
+import scala.collection.mutable.ListBuffer
+import org.scalatest.{WordSpec,Matchers}
 
 class AccountSpec extends WordSpec with Matchers {
 

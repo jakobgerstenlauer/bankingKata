@@ -1,0 +1,64 @@
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:21:9: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.balance shouldBe 0[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:26:18: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val b1 = c.balance[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:27:9: not enough arguments for method deposit: (date: bank.Date, amount: bank.Amount)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0m      c deposit 10[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:38:9: not enough arguments for method deposit: (date: bank.Date, amount: bank.Amount)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0m      c deposit -10[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:40:9: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.balance shouldBe 0[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:44:21: value printStatements is not a member of bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      (new Account).printStatements()[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:50:16: not enough arguments for method deposit: (date: bank.Date, amount: bank.Amount)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0m      c.deposit(1000)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:51:18: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val b1 = c.balance[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:52:9: value withdrawal is not a member of bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.withdrawal(100)[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:54:9: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.balance + 100 shouldBe b1[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:59:16: not enough arguments for method deposit: (date: bank.Date, amount: bank.Amount)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0m      c.deposit(1000)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:60:22: value withdrawal is not a member of bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val amount = c.withdrawal(100)[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:67:9: not enough arguments for method deposit: (date: bank.Date, amount: bank.Amount)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0m      c deposit 10[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:69:9: value withdrawal is not a member of bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.withdrawal(1000) shouldBe 0[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:70:9: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.balance shouldBe 10[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:75:26: value withdrawal is not a member of bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      val withdrawal = c withdrawal -10[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:78:9: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.balance shouldBe 0[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:83:16: not enough arguments for method deposit: (date: bank.Date, amount: bank.Amount)Unit.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter amount.[0m
+[0m[[0m[31merror[0m] [0m[0m      c.deposit(10.1234)[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jakob/workspace_scala/bankingKata/src/test/scala/AccountSpec.scala:85:9: variable balance in class Account cannot be accessed in bank.Account[0m
+[0m[[0m[31merror[0m] [0m[0m      c.balance shouldBe 10.12[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m19 errors found[0m

@@ -1,0 +1,25 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/jakob/workspace_scala/bankingKata/target/scala-2.12/bankingkata_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/UseBankAccount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/UseBankAccount$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Date.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Date.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Transaction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Transaction.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Amount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Amount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Account$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Account$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Account.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Account.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Transaction$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Transaction$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/UseBankAccount$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/UseBankAccount$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/Date$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/Date$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	bank/UseBankAccount.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/jakob/workspace_scala/bankingKata/target/scala-2.12/classes/bank/UseBankAccount.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
