@@ -1,7 +1,8 @@
 package bank
 import scala.collection.mutable.ListBuffer
+import java.util.UUID
 
-case class Date(val day: Int, val month: Int, val year: Int, val hour: Int, val minute: Int, val second: Int){
+case class Date(day: Int, month: Int, val year: Int, val hour: Int, val minute: Int, val second: Int){
         assert(day>=0 && day<=31, "Invalid day!")
         assert(month>=0 && month<=12, "Invalid month!")
         assert(year>=2017, "Invalid year!")
@@ -33,7 +34,7 @@ class Amount(val euro: Int, val cent: Int){
 }
 
 case class Transaction(val date: Date, val amount: Amount, val newBalance: Amount){
-        def print() : String ={
+        def show() : String ={
                 date.print() + "\t" + amount.print() + "\t" + newBalance.print() + "\n"
         }
 }
@@ -48,7 +49,7 @@ class Account{
 	/**
 	* ID should be unique for each new account.
 	*/
-	val id: Int = Account.getCounter()
+	val id: UUID = UUID.randomUUID()
 
         private var balance : Double = 0.0
         private var transactions = ListBuffer[Transaction]()
@@ -83,19 +84,9 @@ class Account{
                 println(Transaction.printHeader())
                 println("-------------------------------------")
                 val ledger = transactions.toList
-                for(i <- Range(0,ledger.size)){
-                      println(ledger.apply(i).print())
-                }
+                ledger.foreach(transaction => println(transaction.show))
         }
 }
-
-object Account {
-	private var counter : Int = 0
-	def getCounter() : Int = {
-		counter = counter + 1
-		return counter - 1
-        }
-} 
 
 object UseBankAccount extends App {
 	val account = new Account()
