@@ -45,18 +45,15 @@ object Transaction{
         }
 }
 
-class Account{
-	/**
-	* ID should be unique for each new account.
-	*/
-	val id: UUID = UUID.randomUUID()
+case class Account(id : UUID = UUID.randomUUID(), balance : Double = 0, 
+        transactions : List[Transaction] = List[Transaction]() ){
 
-        private var balance : Double = 0.0
-        private var transactions = ListBuffer[Transaction]()
-
-        def deposit(date: Date, amount: Amount) : Unit = {
-                balance = balance + amount.toDouble
-                transactions += Transaction(date, amount, new Amount(balance))
+        def deposit(date: Date, amount: Amount) : Account = {
+                val newBalance = balance + amount.toDouble 
+                copy(                  
+                  balance = newBalance,
+                  transactions = transactions :+ Transaction(date, amount, new Amount(newBalance))
+                )
         }
 
   	/**
@@ -64,12 +61,16 @@ class Account{
     	* @param quantity amount of money to withdrawal
     	* @return money withdrawed. 0 if none
     	*/
-        def withdraw(date: Date, amount: Amount) : Unit = {
+        def withdraw(date: Date, amount: Amount) : Account = {
                 if(balance - amount.toDouble > 0){
-                    balance = balance - amount.toDouble
-                    transactions += Transaction(date, amount.invert(), new Amount(balance))
+                 val newBalance = balance - amount.toDouble 
+                 copy(                  
+                  balance = newBalance,
+                  transactions = transactions :+ Transaction(date, amount, new Amount(newBalance))
+                 )
                 }else{
                     println("Withdrawal of "+amount.print()+" was rejected!")
+                    this
                 }
         }
 	
@@ -91,8 +92,8 @@ class Account{
 object UseBankAccount extends App {
 	val account = new Account()
 	account.deposit(Date(day=1, month=2, year=2017, hour=11, minute=12, second=13), new Amount(euro=300,cent=50))
-	account.withdraw(Date(day=1, month=2, year=2017, hour=12, minute=13, second=14), new Amount(euro=200,cent=10))
-	account.withdraw(Date(day=1, month=2, year=2017, hour=12, minute=13, second=14), new Amount(euro=100,cent=1))
-	account.withdraw(Date(day=1, month=2, year=2017, hour=12, minute=13, second=14), new Amount(euro=400,cent=70))
-	account.printStatement()
+	.withdraw(Date(day=1, month=2, year=2017, hour=12, minute=13, second=14), new Amount(euro=200,cent=10))
+        .withdraw(Date(day=1, month=2, year=2017, hour=12, minute=13, second=14), new Amount(euro=100,cent=1))
+	.withdraw(Date(day=1, month=2, year=2017, hour=12, minute=13, second=14), new Amount(euro=400,cent=70))
+	.printStatement()
 }
