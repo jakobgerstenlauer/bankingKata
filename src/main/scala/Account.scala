@@ -1,7 +1,7 @@
 package bank
 import java.util.UUID
 
-case class Date(day: Int, month: Int, val year: Int, val hour: Int, val minute: Int, val second: Int){
+case class Date(day: Int, month: Int, year: Int, hour: Int, minute: Int, second: Int){
         assert(day>=0 && day<=31, "Invalid day!")
         assert(month>=0 && month<=12, "Invalid month!")
         assert(year>=2017, "Invalid year!")
@@ -32,7 +32,7 @@ class Amount(val euro: Int, val cent: Int){
         def toDouble() : Double = euro.toDouble + 0.01 * cent.toDouble
 }
 
-case class Transaction(val date: Date, val amount: Amount, val newBalance: Amount){
+case class Transaction(date: Date, amount: Amount, newBalance: Amount){
         def show() : String ={
                 date.print() + "\t" + amount.print() + "\t" + newBalance.print() + "\n"
         }
