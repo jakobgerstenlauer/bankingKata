@@ -1,5 +1,4 @@
 package bank
-import scala.collection.mutable.ListBuffer
 import java.util.UUID
 
 case class Date(day: Int, month: Int, val year: Int, val hour: Int, val minute: Int, val second: Int){
@@ -84,8 +83,7 @@ case class Account(id : UUID = UUID.randomUUID(), balance : Double = 0,
         def printStatement() : Unit = {
                 println(Transaction.printHeader())
                 println("-------------------------------------")
-                val ledger = transactions.toList
-                ledger.foreach(transaction => println(transaction.show))
+                transactions.foreach(transaction => println(transaction.show))
         }
 }
 
